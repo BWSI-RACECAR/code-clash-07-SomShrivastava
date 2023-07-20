@@ -34,19 +34,15 @@ Input: xO Output: False
 
 class Solution:
     def count_XO(self, string):
-        x_s = 0
-        o_s = 0
-        for letter in string:
-            if letter == "X":
-                x_s += 1
-            elif letter == "O":
-                o_s += 1
-        return x_s == o_s
-            #type string: string
-            #return type: boolean
-            
-            #TODO: Write code below to returnn a boolean value with the solution to the prompt.
-                
+        x = 0
+        o = 0
+        for i in string:
+            if i == "X":
+                x += 1
+            elif i == "O":
+                o += 1
+        return x == o
+
 def main():
     input1=input()
     tc1 = Solution()
